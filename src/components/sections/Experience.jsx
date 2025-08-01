@@ -116,7 +116,7 @@ export const Experience = () => {
                                 {!isFirstExpanded && (
                                     <button
                                         onClick={toggleExpandFirst}
-                                        className="flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                                        className="cursor-pointer flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
                                     >
                                         <IoIosArrowDown /> See More
                                     </button>
@@ -137,63 +137,63 @@ export const Experience = () => {
                                             Technologies
                                         </p>
                                         <div className="grid grid-cols-3 md:grid-cols-5 gap-1 space-y-2 mb-6">
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#vue`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">Vue</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#quasar`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">Quasar</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#springboot`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">Spring Boot</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={35} height={35} className="text-white fill-current">
                                                     <use xlinkHref={`${sprite}#flask`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">Flask</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#html`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">HTML</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#css`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">CSS</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#javascript`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">JavaScript</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <img src={typescriptLogo} alt="TypeScript Logo" width={20} height={20} />
                                                 <span className="text-[11px] text-gray-300">TypeScript</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#java`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">Java</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <img src={pythonLogo} alt="Python Logo" width={20} height={20} />
                                                 <span className="text-[11px] text-gray-300">Python</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <img src={tailwindcssLogo} alt="TailwindCSS Logo" width={20} height={20} />
                                                 <span className="text-[11px] text-gray-300">TailwindCSS</span>
                                             </div>
@@ -201,7 +201,7 @@ export const Experience = () => {
 
                                         <button
                                             onClick={toggleExpandFirst}
-                                            className="flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                                            className="cursor-pointer flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
                                         >
                                             <IoIosArrowUp /> See Less
                                         </button>
@@ -249,7 +249,7 @@ export const Experience = () => {
                                 {!isSecondExpanded && (
                                     <button
                                         onClick={toggleExpandSecond}
-                                        className="flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                                        className="cursor-pointer flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
                                     >
                                         <IoIosArrowDown /> See More
                                     </button>
@@ -269,41 +269,41 @@ export const Experience = () => {
                                             Technologies
                                         </p>
                                         <div className="grid grid-cols-3 md:grid-cols-5 gap-1 space-y-2 mb-6">
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#react`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">React</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#django`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">Django</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#html`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">HTML</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#css`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">CSS</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#javascript`} />
                                                 </svg>
                                                 <span className="text-[11px] text-gray-300">JavaScript</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <img src={pythonLogo} alt="Python Logo" width={20} height={20} />
                                                 <span className="text-[11px] text-gray-300">Python</span>
                                             </div>
-                                            <div className="flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#material-ui`} />
                                                 </svg>
@@ -313,7 +313,7 @@ export const Experience = () => {
 
                                         <button
                                             onClick={toggleExpandSecond}
-                                            className="flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                                            className="cursor-pointer flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
                                         >
                                             <IoIosArrowUp /> See Less
                                         </button>

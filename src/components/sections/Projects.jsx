@@ -88,7 +88,7 @@ export const Projects = () => {
                                 <p className="text-gray-300 mb-4">
                                     {project.description}
                                 </p>
-                                <div className="flex flex-wrap gap-2 mb-6">
+                                <div className="cursor-default flex flex-wrap gap-2 mb-6">
                                     {project.technologies.map((tech, index) => (
                                         <span
                                             key={index}
@@ -103,7 +103,7 @@ export const Projects = () => {
                                         data-modal-target="static-modal"
                                         data-modal-toggle="static-modal"
                                         onClick={() => openModal(project)}
-                                        className="text-blue-400 hover:text-blue-300 transition-colors"
+                                        className="text-blue-400 hover:text-blue-300 transition-colors cursor-pointer"
                                     >
                                         View Project
                                     </button>
