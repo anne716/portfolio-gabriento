@@ -37,7 +37,7 @@ export const Home = () => {
                         {/* Lines of Code Written */}
                         <div className="flex items-center gap-2">
                             <p className="text-xs bg-[#292929] p-2 rounded-xl">
-                                1k
+                                1k+
                             </p>
                             <p className="text-gray-400 text-xs text-left">
                                 Lines of <br />
@@ -50,7 +50,7 @@ export const Home = () => {
                         {/* Cups of Coffee Consumed */}
                         <div className="flex items-center gap-2">
                             <p className="text-xs bg-[#292929] p-2 rounded-xl">
-                                50
+                                20
                             </p>
                             <p className="text-gray-400 text-xs text-left">
                                 Cups of coffee <br />
