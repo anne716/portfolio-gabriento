@@ -46,9 +46,11 @@ export const Contact = () => {
                                     <p className="text-[11px] text-gray-500">
                                         My LinkedIn account
                                     </p>
-                                    <p className="text-sm font-semibold">
-                                        /in/anna-nicole-gabriento
-                                    </p>
+                                    <a href="https://www.linkedin.com/in/anna-nicole-gabriento/" target="_blank">
+                                        <p className="text-sm font-semibold">
+                                            /in/anna-nicole-gabriento
+                                        </p>
+                                    </a>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">
@@ -59,9 +61,11 @@ export const Contact = () => {
                                     <p className="text-[11px] text-gray-500">
                                         My Github account
                                     </p>
-                                    <p className="text-sm font-semibold">
-                                        /peanut150
-                                    </p>
+                                    <a href="https://github.com/anne716" target="_blank">
+                                        <p className="text-sm font-semibold">
+                                            /anne716
+                                        </p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
