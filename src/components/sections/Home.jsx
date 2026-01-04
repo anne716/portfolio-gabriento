@@ -15,7 +15,7 @@ export const Home = () => {
                     </p>
 
                     {/* Description */}
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-none mb-10">
+                    <h1 className="text-5xl md:text-7xl font-bold leading-none mb-10">
                         Experienced <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">full-stack developer </span>with a focus on <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">front-end development</span>.
                     </h1>
 
