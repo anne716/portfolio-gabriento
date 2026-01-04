@@ -37,7 +37,7 @@ export const Home = () => {
                         {/* Lines of Code Written */}
                         <div className="flex items-center gap-2">
                             <p className="text-xs bg-[#292929] p-2 rounded-xl">
-                                1k+
+                                5k+
                             </p>
                             <p className="text-gray-400 text-xs text-left">
                                 Lines of <br />
@@ -49,11 +49,11 @@ export const Home = () => {
 
                         {/* Cups of Coffee Consumed */}
                         <div className="flex items-center gap-2">
-                            <p className="text-xs bg-[#292929] p-2 rounded-xl">
-                                20
-                            </p>
+                            {/* <p className="text-xs bg-[#292929] p-2 rounded-xl">
+                                30
+                            </p> */}
                             <p className="text-gray-400 text-xs text-left">
-                                Cups of coffee <br />
+                                Countless cups of coffee <br />
                                 consumed
                             </p>
                         </div>
@@ -63,7 +63,7 @@ export const Home = () => {
                     <div className="flex justify-center space-x-4">
                         <a
                             href="/Resume_Gabriento.pdf"
-                            download="Resume-Gabriento"
+                            download="Resume_Gabriento"
                             className="flex justify-center items-center gap-1 bg-blue-500 text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
                         >
                             <IoDocumentTextOutline className="icons" />
