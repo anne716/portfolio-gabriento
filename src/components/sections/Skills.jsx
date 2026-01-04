@@ -3,6 +3,7 @@ import sprite from "../../assets/svg/sprite.svg";
 import pythonLogo from "../../assets/svg/python.svg";
 import tailwindcssLogo from "../../assets/svg/tailwindcss.svg";
 import typescriptLogo from "../../assets/svg/typescript.svg";
+import flowbiteLogo from "../../assets/svg/flowbite.svg";
 
 export const Skills = () => {
 
@@ -128,7 +129,7 @@ export const Skills = () => {
                                 <span className="text-[11px] text-center">Material UI</span>
                             </div>
                             <div className="rounded-lg bg-[#222222] p-2 flex flex-col justify-center items-center w-20 hover:-translate-y-0.5 hover:shadow-[0_0_15px_#222222] transition">
-                                <img src={tailwindcssLogo} alt="TailwindCSS Logo" width={48} height={48} />
+                                <img src={tailwindcssLogo} alt="TailwindCSS Logo" width={60} height={60} className="mb-3" />
                                 <span className="text-[11px] text-center">TailwindCSS</span>
                             </div>
                             <div className="rounded-lg bg-[#222222] p-2 flex flex-col justify-center items-center w-20 hover:-translate-y-0.5 hover:shadow-[0_0_15px_#222222] transition">
@@ -136,6 +137,34 @@ export const Skills = () => {
                                     <use xlinkHref={`${sprite}#bootstrap`} />
                                 </svg>
                                 <span className="text-[11px] text-center">Bootstrap</span>
+                            </div>
+                            <div className="rounded-lg bg-[#222222] p-2 flex flex-col justify-center items-center w-20 hover:-translate-y-0.5 hover:shadow-[0_0_15px_#222222] transition">
+                                <svg width={48} height={48} className="mb-0">
+                                    <use xlinkHref={`${sprite}#git`} />
+                                </svg>
+                                <span className="text-[11px] text-center">Git</span>
+                            </div>
+                            <div className="rounded-lg bg-[#222222] p-2 flex flex-col justify-center items-center w-20 hover:-translate-y-0.5 hover:shadow-[0_0_15px_#222222] transition">
+                                <img src={flowbiteLogo} alt="Flowbite Logo" width={48} height={48} />
+                                <span className="text-[11px] text-center">Flowbite</span>
+                            </div>
+                            <div className="rounded-lg bg-[#222222] p-2 flex flex-col justify-center items-center w-20 hover:-translate-y-0.5 hover:shadow-[0_0_15px_#222222] transition">
+                                <svg width={48} height={48} className="mb-0">
+                                    <use xlinkHref={`${sprite}#cypress`} />
+                                </svg>
+                                <span className="text-[11px] text-center">Cypress</span>
+                            </div>
+                            <div className="rounded-lg bg-[#222222] p-2 flex flex-col justify-center items-center w-20 hover:-translate-y-0.5 hover:shadow-[0_0_15px_#222222] transition">
+                                <svg width={48} height={48} className="mb-0">
+                                    <use xlinkHref={`${sprite}#robot-framework`} />
+                                </svg>
+                                <span className="text-[11px] text-center">Robot Framework</span>
+                            </div>
+                            <div className="rounded-lg bg-[#222222] p-2 flex flex-col justify-center items-center w-20 hover:-translate-y-0.5 hover:shadow-[0_0_15px_#222222] transition">
+                                <svg width={48} height={48} className="mb-1">
+                                    <use xlinkHref={`${sprite}#linux`} />
+                                </svg>
+                                <span className="text-[11px] text-center">Linux</span>
                             </div>
                         </div>
                     </div>
