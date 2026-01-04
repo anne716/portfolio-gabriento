@@ -7,31 +7,38 @@ import tailwindcssLogo from "../../assets/svg/tailwindcss.svg";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import apollotechLogo from "../../assets/images/logos/apollotech.png";
 import cdocsLogo from "../../assets/images/logos/cdocs.png";
+import dostLogo from "../../assets/images/logos/dost.png";
+import flowbiteLogo from "../../assets/svg/flowbite.svg";
 
 export const Experience = () => {
     const [isFirstExpanded, setIsFirstExpanded] = useState(false);
     const [isSecondExpanded, setIsSecondExpanded] = useState(false);
+    const [isThirdExpanded, setIsThirdExpanded] = useState(false);
     const [timelineHeight, setTimelineHeight] = useState('auto');
     
     const firstExperienceRef = useRef(null);
     const secondExperienceRef = useRef(null);
+    const thirdExperienceRef = useRef(null);
     const timelineContainerRef = useRef(null);
     
     const toggleExpandFirst = () => setIsFirstExpanded(!isFirstExpanded);
     const toggleExpandSecond = () => setIsSecondExpanded(!isSecondExpanded);
+    const toggleExpandThird = () => setIsThirdExpanded(!isThirdExpanded);
 
     useEffect(() => {
         const updateTimelineHeight = () => {
-            if (firstExperienceRef.current && secondExperienceRef.current && timelineContainerRef.current) {
+            if (firstExperienceRef.current && secondExperienceRef.current && thirdExperienceRef.current && timelineContainerRef.current) {
                 // Get the bottom position of both experience cards relative to the container
                 const firstRect = firstExperienceRef.current.getBoundingClientRect();
                 const secondRect = secondExperienceRef.current.getBoundingClientRect();
+                const thirdRect = thirdExperienceRef.current.getBoundingClientRect();
                 const containerRect = timelineContainerRef.current.getBoundingClientRect();
                 
                 const firstBottom = firstRect.bottom - containerRect.top;
                 const secondBottom = secondRect.bottom - containerRect.top;
+                const thirdBottom = thirdRect.bottom - containerRect.top;
                 
-                const newHeight = Math.max(firstBottom, secondBottom) - 33;
+                const newHeight = Math.max(firstBottom, secondBottom, thirdBottom) - 33;
                 setTimelineHeight(`${newHeight}px`);
             }
         };
@@ -49,11 +56,14 @@ export const Experience = () => {
         if (secondExperienceRef.current) {
             resizeObserver.observe(secondExperienceRef.current);
         }
+        if (thirdExperienceRef.current) {
+            resizeObserver.observe(thirdExperienceRef.current);
+        }
 
         return () => {
             resizeObserver.disconnect();
         };
-    }, [isFirstExpanded, isSecondExpanded]);
+    }, [isFirstExpanded, isSecondExpanded, isThirdExpanded]);
 
     return (
         <section
@@ -76,6 +86,117 @@ export const Experience = () => {
                     ></div>
                     
                     <ol className="space-y-12">
+                        <li className="relative w-1/2 pl-8 text-left right-side ml-auto" ref={thirdExperienceRef}>
+                            <div className="absolute top-0 left-0 transform -translate-x-1/2">
+                                <span className="flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                                    <svg
+                                        className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            
+                            <div className="absolute top-0 right-0 transform -translate-x-[395%] md:-translate-x-[530%] w-25 h-25 flex items-start">
+                                <img
+                                    src={dostLogo}
+                                    alt="DOST Logo"
+                                    className="max-w-full max-h-full object-contain rounded-lg bg-white"
+                                />
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-bold">
+                                    Government Internship Program (GIP) Intern - Full-Stack Developer
+                                </h3>
+                                <h4 className="text-sm text-gray-400">
+                                    Department of Science and Technology Region X (DOST-X)
+                                </h4>
+                                <time className="block text-xs text-gray-500 mb-3">
+                                    September 2025 - December 2025
+                                </time>
+                                <p className="text-gray-300 mb-4">
+                                    Assisted the HR manager in designing and developing a system to manage employee attendance and leave credits on a monthly and yearly basis.
+                                </p>
+
+                                {!isThirdExpanded && (
+                                    <button
+                                        onClick={toggleExpandThird}
+                                        className="cursor-pointer flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                                    >
+                                        <IoIosArrowDown /> See More
+                                    </button>
+                                )}
+
+                                {isThirdExpanded && (
+                                    <>
+                                        <p className="font-bold mb-2">
+                                            Activities
+                                        </p>
+                                        <ul className="list-disc list-inside text-gray-300 mb-4 ps-1">
+                                            <li>Designed the Attendance Management System using Figma.</li>
+                                            <li>Developed a responsive front-end using ReactJS, TailwindCSS, and Flowbite.</li>
+                                            <li>Developed the back-end using Laravel and PostgreSQL.</li>
+                                        </ul>
+
+                                        <p className="font-bold mb-2">
+                                            Technologies
+                                        </p>
+                                        <div className="grid grid-cols-3 md:grid-cols-5 gap-1 space-y-2 mb-6">
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
+                                                <svg width={20} height={20}>
+                                                    <use xlinkHref={`${sprite}#react`} />
+                                                </svg>
+                                                <span className="text-[11px] text-gray-300">React</span>
+                                            </div>
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
+                                                <svg width={20} height={20}>
+                                                    <use xlinkHref={`${sprite}#laravel`} />
+                                                </svg>
+                                                <span className="text-[11px] text-gray-300">Laravel</span>
+                                            </div>
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
+                                                <svg width={20} height={20}>
+                                                    <use xlinkHref={`${sprite}#html`} />
+                                                </svg>
+                                                <span className="text-[11px] text-gray-300">HTML</span>
+                                            </div>
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
+                                                <svg width={20} height={20}>
+                                                    <use xlinkHref={`${sprite}#css`} />
+                                                </svg>
+                                                <span className="text-[11px] text-gray-300">CSS</span>
+                                            </div>
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
+                                                <svg width={20} height={20}>
+                                                    <use xlinkHref={`${sprite}#javascript`} />
+                                                </svg>
+                                                <span className="text-[11px] text-gray-300">JavaScript</span>
+                                            </div>
+                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
+                                                <img src={tailwindcssLogo} alt="TailwindCSS Logo" width={20} height={20} />
+                                                <span className="text-[11px] text-gray-300">TailwindCSS</span>
+                                            </div>
+                                            <div className="cursor-default flex items-center gap-1 mb-2 hover:-translate-y-1 transition">
+                                                <img src={flowbiteLogo} alt="Flowbite Logo" width={20} height={20} />
+                                                <span className="text-[11px] text-gray-300">Flowbite</span>
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            onClick={toggleExpandThird}
+                                            className="cursor-pointer flex justify-center items-center gap-1 bg-blue-500 text-white text-sm py-2 px-4 rounded-full font-semibold transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                                        >
+                                            <IoIosArrowUp /> See Less
+                                        </button>
+                                    </>
+                                )}
+                            </div>
+                        </li>
+
                         <li className="relative w-1/2 pr-8 left-side" ref={firstExperienceRef}>
                             <div className="absolute top-0 right-0 transform translate-x-1/2">
                                 <span className="flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -303,7 +424,7 @@ export const Experience = () => {
                                                 <img src={pythonLogo} alt="Python Logo" width={20} height={20} />
                                                 <span className="text-[11px] text-gray-300">Python</span>
                                             </div>
-                                            <div className="cursor-default flex items-center gap-1 hover:-translate-y-1 transition">
+                                            <div className="cursor-default flex items-center gap-1 mb-2 hover:-translate-y-1 transition">
                                                 <svg width={20} height={20}>
                                                     <use xlinkHref={`${sprite}#material-ui`} />
                                                 </svg>
