@@ -21,6 +21,15 @@ import workconnect1 from "../../assets/images/workconnect/workconnect1.png";
 import workconnect2 from "../../assets/images/workconnect/workconnect2.png";
 import workconnect3 from "../../assets/images/workconnect/workconnect3.png";
 import workconnect4 from "../../assets/images/workconnect/workconnect4.png";
+import dost1 from "../../assets/images/dost-attendance-management/dost1.png";
+import dost2 from "../../assets/images/dost-attendance-management/dost2.png";
+import dost3 from "../../assets/images/dost-attendance-management/dost3.png";
+import dost4 from "../../assets/images/dost-attendance-management/dost4.png";
+import dost5 from "../../assets/images/dost-attendance-management/dost5.png";
+import dost6 from "../../assets/images/dost-attendance-management/dost6.png";
+import dost7 from "../../assets/images/dost-attendance-management/dost7.png";
+import dost8 from "../../assets/images/dost-attendance-management/dost8.png";
+import dost9 from "../../assets/images/dost-attendance-management/dost9.png";
 
 export const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -54,6 +63,13 @@ export const Projects = () => {
             description: "A collection of services to monitor/inform ONUs and OLTs, and Zeep network statistics.",
             technologies: ["Vue", "Spring Boot", "HTML", "CSS", "TypeScript", "Java"],
             images: [acszeep1, acszeep2],
+        },
+        {
+            id: 5,
+            title: "DOST Attendance Management System",
+            description: "A management system for tracking employee attendance and leave credits on a monthly and yearly basis.",
+            technologies: ["ReactJS", "Laravel", "HTML", "CSS", "TypeScript", "PHP", "PostgreSQL", "Laragon", "TailwindCSS", "Flowbite"],
+            images: [dost1, dost2, dost3, dost4, dost5, dost6, dost7, dost8, dost9],
         },
     ];
 
